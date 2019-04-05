@@ -1,167 +1,213 @@
-/* jobs page */
-.allJobs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+/* Intro */
+body {
+  /* background-color: #000066; */
+  background-image: url(forest.png);
+  background-image: url(https://cdn4.vectorstock.com/i/1000x1000/99/13/cartoon-fairy-tale-fir-forest-starry-blue-at-night-vector-19049913.jpg);
+background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://cdn4.vectorstock.com/i/1000x1000/99/13/cartoon-fairy-tale-fir-forest-starry-blue-at-night-vector-19049913.jpg);
+  /* background-image: url(https://cdn3.vectorstock.com/i/1000x1000/74/67/city-park-in-gradient-colors-vector-21317467.jpg); */
+/* filter: blur(8px); */
+
+  background-size: 200%;
+  font-size: 62.5%;
+  text-decoration: none;
 }
 
-.jobData {
-    width: 400px;
-    background-color: #ffff29;
-    border-style: solid;
-    margin: 10px;
-    font-size: 40px;
-    padding: 20px;
+.introContent {
+  font-family: overpass,helvetica,arial,sans-serif;
+  font-weight: 650;
 }
 
-a:link, a:visited {
-    color: black;
-    text-decoration: none;
+.title {
+  font-size: 13.6em;
+  color: #8A2BE2;
+  color: hotpink;
+  color: yellow;
 }
 
-.filtersbutton {
-    display: inline-block;
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 30px;
-    margin-top: 80px;
+#logo {
+  margin-top: 28%;
+  width: 220px;
+  height: 220px;
 }
 
-.filters {
-    /* margin: 50px; */
-    display: flex;
+.logoandtitle {
+  display: flex;
+
 }
 
-.filter {
-    height: 50px;
-    width: 200px;
-    font-size: 30px;
-    margin: 12px;
+.subtitle {
+  font-size: 10.6em;
+  line-height: 130px;
+  margin-left: 220pX;
+  margin-top: 0px;
+  color: 	#6495ED;
+  color: yellow;
+  color: #27e3c9;
+
 }
 
-#createJob {
-    height: 100%;
-    width: 300px;
-    font-size: 30px;
-    margin-left: 120px;
+.links {
+ text-align: center;
+ /* background-color: rgba(255,255,255,.9); */
+ font-size: 50px;
+ line-height: 160px;
+ text-decoration: none;
+
 }
 
-.busca {
-    color: black;
-    font-size: 40px;
-    font-style: italic;
+a:link {
+  text-decoration: none ;
 }
 
-/* job details page */
-.jobDetails {
-    background-color: #ADFF2F;
-    margin: 50px;
-    padding: 20px;
-    margin-top: 200px;
+a:visited {
+  color: silver;
+  /* color: black; */
 }
 
-.jobDetails p {
-    font-size: 10px;
+
+#joinButton {
+  color: lime;
+  background-color: DEEPpink;
+  border-color: DodgerBlue;
+  outline: 15px solid LIME;
+  padding-top: 500px;
+  border-style: solid;
+  border-width: 15px;
+  padding: 20px;
+  line-height: 240px;
+  font-weight: 750;
+
 }
 
-.btn {
-    background-color: DodgerBlue;
-    border: none;
-    color: white;
-    margin-right: 20px;
-    font-size: 76px;
-    cursor: pointer;
-    right: 0;
-    top: 0;
-    position: absolute;
+.logoDiv {
+  margin: 0;
 }
 
-/* job form */
-.formQuestions {
-    font-size: 40px;
+#credits {
+  position: fixed;
+  right: 5%;
+  bottom: 2%;
+  font-size: 35px;
 }
 
-.formInputs {
-    font-size: 50px;
-    width: 60%;
-    height: 60%;
-    margin-bottom: 35px;
-    border-style: solid;
-    border-width: medium;
-}
 
-.jobForm {
-    margin: 40px;
-    padding: 20px;
-}
-
-.radio {
-    width: 3em;
-    height: 3em;
-    margin-right: 25px;
-    margin-bottom: 30px;
-}
-
-#listo {
-    width: 50%;
-    height: 100px;
-    font-size: 50px;
-}
-
-/* confirm page */
-.jobConfirmPage {
-    margin: 40px;
-    padding: 20px;
-}
-
-.confirmButton {
-    width: 300px;
-    height: 100px;
-    font-size: 50px;
-    margin: 30px;
-}
-
-.confirmButtons {
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-}
-
-.confirmText {
-    font-size: 45px;
-    margin-top: 50px;
-}
-
-td {
-    padding: 15px;
-}
-
-.confirmTitle {
-    margin-bottom: 100px;
-    font-size: 45px;
-}
 
 .modal {
     transform: translate(-50%, -50%);
     position: fixed;
-    background: DodgerBlue;
-    border-style: solid;
-    width: 80%;
-    height: 80%;
+    background: white;
+    width: 90%;
+    height: 88%;
     top: 50%;
     left: 50%;
-    color: #ffffff;
-    display: flex;
+    color: black;
 }
 
-.jobMoment {
-    font-size: 30px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    font-style: oblique;
+
+#modalWaitlist {
+    transform: translate(-50%, -5%);
+    position: relative;
+    background: white;
+    width: 90%;
+    /* height: 98%; */
+    /* top: 60%; */
+    left: 50%;
+    color: black;
+    margin-top: -130%;
 }
 
-label {
+#btnWaitlist {
+  z-index: 2;
+  width: 18%;
+  height: 9%;
+  margin-left: 78%;
+  margin-top: -15%;
+  font-size: 45px;
+  position: fixed;
+  background-color: black;
+  color: white;
+
+}
+
+#manifiesto {
+  margin: 6%;
+  margin-top: 0px;
+  font-size: 40px;
+  text-align: left;
+  /* font-family: overpass,helvetica,arial,sans-serif; */
+  font-weight: 450;
+  line-height: 50px;
+}
+
+#poem {
+  margin: 26%;
+  font-size: 40px;
+  text-align: left;
+  /* font-family: overpass,helvetica,arial,sans-serif; */
+  font-weight: 450;
+  line-height: 50px;
+}
+
+#waitlist {
+  /* margin: 16%; */
+  padding: 15%;
+  font-size: 40px;
+  text-align: left;
+  /* font-family: overpass,helvetica,arial,sans-serif; */
+  font-weight: 450;
+  line-height: 50px;
+}
+
+#form {
+  margin: 6%;
+  font-size: 40px;
+  text-align: left;
+  /* font-family: overpass,helvetica,arial,sans-serif; */
+  font-weight: 450;
+  line-height: 50px;
+}
+
+.thankyou {
+  /* margin: 26%; */
+  font-size: 40px;
+  text-align: left;
+  font-weight: 450;
+  line-height: 50px;
+}
+
+.formInputs {
+  font-size: 50px;
+  width: 100%;
+  height: 60%;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  background-color: black;
+  color: white;
+}
+
+.radioInputs {
+  width: 50px;;
+  height: 50px;
+}
+
+#joinButton2 {
+    width: 300px;
+    height: 100px;
     font-size: 30px;
+    margin-left: 60%;
+    margin-top: 5%;
+    background-color: black;
+    color: white;
+}
+
+.btn   {
+  width: 20%;
+  height: 10%;
+  /* margin-bottom: 0px; */
+  margin-left: 83%;
+  margin-top: -3%;
+  font-size: 45px;
+  position: relative;
+  background-color: black;
+  color: white;
 }

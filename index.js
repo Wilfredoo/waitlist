@@ -28,72 +28,40 @@ app.use(cookieSession({
     maxAge: 1000 * 60 * 60 * 24 * 14
 }));
 
-
 app.use(require('body-parser').json())
 
-app.get("/getpeople", function(req, res) {
-    return database.getpeople().then(data => {
-      console.log("where is my soup", req.body);
+app.get("/showWaitlist", function(req, res) {
+    return database.showWaitlist().then(data => {
         res.json({
             data
         });
     });
 });
 
-app.get("/getuser", function(req, res) {
-  console.log(req.session);
-      res.json(req.session);
+app.get("/showPoem", function(req, res) {
+    return database.showPoem().then(data => {
+        res.json({
+            data
+        });
+    });
 });
 
-app.post('/register-user', function(req, res) {
-    database.hashPassword(req.body.password)
-        .then(hash => {
-            return database.registerUser(req.body.alias, req.body.email, hash)
+app.post('/addToWaitlist', function(req, res) {
+  console.log('maria should appear here', req.body.firstname);
+    database.addToWaitlist(req.body.firstname, req.body.lastname, req.body.email, req.body.phone, req.body.city, req.body.preference, req.body.message)
                 .then(results => {
                     // req.session.userId = results[0].id;
-                    res.json({success:true});
+                    res.redirect('/')
                 })
                 .catch(err => {
                     console.log(err);
                     res.json({success:false});
+                    // prompt user that error happened
                 });
         })
-        .catch(err => {
-            console.log(err);
-        });
-});
-
-
-app.post('/log-in', (req, res) => {
-    database.showHashPw(req.body.email)
-        .then(userPw => {
-            if (!userPw) {
-                res.json({success:false});
-            } else {
-                return database.checkPassword(req.body.password, userPw);
-            }
-        })
-        .then(doesMatch => {
-            if(doesMatch) {
-                database.getUser(req.body.email).then(user => {
-                  console.log("im here session", req.session);
-                    req.session.userId = user.id;
-                    req.session.userName = user.alias;
-                    console.log("im here session2", req.session);
-
-                    res.redirect('/');
-                });
-            } else {
-                res.json({success:false});
-            }
-        })
-        .catch(err => {console.log(err);});
-});
-
 
 app.get('*', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 });
-
 
 app.listen(process.env.PORT || 8080);
