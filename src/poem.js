@@ -7,9 +7,7 @@ export class Poem extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
-    // this.number = this.number.bind(this);
-    this.number = 2;
-  }
+    }
 
   componentDidMount() {
     axios.get("/showPoem").then(result => {

@@ -21,8 +21,9 @@ exports.showWaitlist = function() {
 
 exports.showPoem = function() {
     return db.query(`SELECT *
-        FROM poems;`)
+        FROM poems ORDER BY RANDOM() LIMIT 1;`)
         .then(results => {
+          console.log(results.rows);
             return results.rows
         })
 }

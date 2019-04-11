@@ -99,14 +99,14 @@ export class Intro extends React.Component {
     return (
       <div className="introContent">
         <div className="logoandtitle">
-          <div className="logoDiv">
-            <img id="logo" src="/logo.png" />
-          </div>
           <div>
               <h1 className="title">Colibri</h1>
           </div>
+          <div className="logoDiv">
+          <img id="logo" src="/hum3.png" />
+          </div>
         </div>
-        <h2 className="subtitle">a dating app for Berlin</h2>
+        <h2 className="subtitle">a unique<br />dating app</h2>
         <div className="links">
           <p>
             <a onClick={e => this.handleClickManifiesto()} href="#">

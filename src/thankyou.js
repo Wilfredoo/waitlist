@@ -12,11 +12,13 @@ export class Thankyou extends React.Component {
   render() {
     return (
       <div className="modal thankyou">
-      <h1>THANK YOU</h1>
-      <p>We don't have money for ads, but you can tell people about this. <br /> and maybe we'll start a chain reaction <br /> arent chain reactions cool?</p>
       <button onClick={this.props.close} className="btn">
         <i class="fa fa-close"></i>
       </button>
+ <br />
+      <p>So, here is the deal; if you like us, tell 2 friends about this. <br /><br /> Or if you don't have friends, tell it to a couple of strangers... <br /> <br />  ...and maybe they'll become your friends...<br /><br /> ...and maybe we'll start a chain reaction <br /><br /> Aren't chain reactions cool?</p>
+      <h1>GIF</h1>
+      <button onClick={this.props.close} id="joinButton2" type="submit">Yes, they are</button>
 
       </div>
     );

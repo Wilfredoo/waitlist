@@ -63,21 +63,12 @@ export class Form extends React.Component {
             }}
           />
 
-          <input
-            className="formInputs"
-            type="email"
-            name="email"
-            placeholder=" Email (no spam)"
-            required="required"
-            onChange={e => {
-              this.handleChange(e);
-            }}
-          />
+
           <input
             className="formInputs"
             type="number"
             name="phone"
-            placeholder=" Phone number (optional - with country code pls)"
+            placeholder=" WhatsApp number"
             required="required"
             onChange={e => {
               this.handleChange(e);

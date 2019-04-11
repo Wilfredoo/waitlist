@@ -88,7 +88,6 @@ export class Waitlist extends React.Component {
             );
           })}
         </table>
-
       </div>
       </div>
     );
