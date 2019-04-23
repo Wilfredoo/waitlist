@@ -1,16 +1,16 @@
 /* Intro */
 body {
   /* background-color: #000066; */
-  background-image: url(forest.png);
-  background-image: url(https://cdn4.vectorstock.com/i/1000x1000/99/13/cartoon-fairy-tale-fir-forest-starry-blue-at-night-vector-19049913.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(https://cdn4.vectorstock.com/i/1000x1000/99/13/cartoon-fairy-tale-fir-forest-starry-blue-at-night-vector-19049913.jpg);
+    /* background-image: url(https://i.imgur.com/2OT7vER.png); */
   /* background-image: url(https://cdn3.vectorstock.com/i/1000x1000/74/67/city-park-in-gradient-colors-vector-21317467.jpg); */
   /* filter: blur(8px); */
-
-  background-size: 200%;
+  background-position: top;
+  background-size: 270%;
   font-size: 62.5%;
   text-decoration: none;
+  text-align: center;
 }
 
 .introContent {
@@ -20,49 +20,60 @@ body {
 
 .title {
   font-size: 13.6em;
-  color: #8a2be2;
-  color: hotpink;
-  color: #ffab40
-  ;
-  margin-left: 15%;
-  font-family: 'Alegreya Sans SC', sans-serif;
-  /* font-family: 'Oleo Script'; */
-  /* font-family: 'Lobster', cursive; */
-
-
+    letter-spacing: 5px;
+  font-family: 'Oleo Script';
+  padding-left: -10%;
+  padding-right: 20%;
+  margin-left: 17%;
+  margin-top: 37%;
+  /* padding-right: 10%; */
 }
 
-
 #logo {
-  margin-top: 38%;
+  margin-top: 80%;
+  margin-left: -15%;
   width: 150px;
   height: 150px;
+
 }
 
 .logoandtitle {
   display: flex;
+  justify-content: center;
 }
 
 .subtitle {
   font-size: 8.6em;
   line-height: 140%;
   margin-right: 10%;
-  margin-top: -30px;
-  color: #6495ed;
-  color: yellow;
+  margin-top: -50px;
+  /* color: #6495ed; */
+  /* color: yellow; */
   color: #1ceaec;
-  text-align: right;
+  color: #1ceaec;
+
+  /* color: #7FDBFF */
+;
+
+
+  /* text-align: right; */
   font-family: 'Oleo Script';
   font-family: 'Alegreya Sans SC', sans-serif;
-
+  margin-left: 8%;
+  /* text-align: center */
 }
 
 .links {
-  text-align: center;
   /* background-color: rgba(255,255,255,.9); */
   font-size: 50px;
-  line-height: 160px;
+  line-height: 200px;
   text-decoration: none;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  /* margin-left: 7%; */
+  /* text-align: center; */
+  color: #dae1e7;
+  color: black;
+
 }
 
 a:link {
@@ -71,25 +82,58 @@ a:link {
 
 a:visited {
   color: #dae1e7;
+  /* color: yellow; */
   /* color: black; */
 }
 
-#joinButton {
-  color: lime;
-  background-color: #fe2178;
-  border-color: dodgerblue;
-  outline: 15px solid LIME;
-  padding-top: 500px;
+  #joinButton {
+  color: #01FF70;
+  color: #dae1e7;
+  color: yellow;
   border-style: solid;
-  border-width: 15px;
-  padding: 20px;
-  line-height: 240px;
-  font-weight: 750;
+border-width: 15px;
+padding: 25px;
+margin-top: 20%;
+font-weight: 950;
+font-family: arial;
+text-align: center;
+font-size: 70px;
 }
 
-.logoDiv {
-  margin: 0;
+#outerouter {
+  background: linear-gradient(90deg,
+yellow
+ 50%, transparent 50%), linear-gradient(90deg,
+yellow
+ 50%, transparent 50%), linear-gradient(0deg,
+yellow
+ 50%,
+  transparent 50%), linear-gradient(0deg,
+yellow
+ 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 30px 20px, 30px 20px, 20px 30px, 20px 30px;
+  margin-left: 90px;
+  margin-right: 90px;
+  animation: border-dance 4s infinite linear;
+  margin-bottom: -10px;
+  height: 210px;
+  margin-top: 5%;
 }
+
+@keyframes border-dance {
+  100% {
+    background-position: 0 96%, 30% 0%, 100% 80%, 0% 0%;
+  }
+
+  0% {
+    background-position: 30% 96%, 0 0%, 100% 0%, 0% 80%;
+  }
+
+
+}
+
+
 
 #credits {
   position: fixed;
@@ -101,39 +145,39 @@ a:visited {
 .modal {
   transform: translate(-50%, -50%);
   position: fixed;
-  background: #f1f5f8;
-  /* background: #fff8dc; */
-  /* background: #fffdd0; */
-
+  background: #f3f3f3;
   width: 90%;
-  height: 88%;
+  height: 92%;
   top: 50%;
   left: 50%;
-  color: black;
+  color: black
+
+;
 }
 
 #modalWaitlist {
-  transform: translate(-50%, -5%);
+  transform: translate(-50%, -10.5%);
   position: relative;
-  background: white;
-  width: 90%;
+  background: #f3f3f3;
+  width: 92%;
   /* height: 98%; */
   /* top: 60%; */
   left: 50%;
   color: black;
   margin-top: -130%;
+  /* height: 120%; */
 }
 
 #btnWaitlist {
   z-index: 2;
   width: 18%;
   height: 9%;
-  margin-left: 78%;
-  margin-top: -15%;
+  margin-left: 28%;
+  margin-top: -31%;
   font-size: 45px;
   position: fixed;
   background-color: #12283a;
-  color: #f1f5f8;
+  color: #f1f5f8; */
 }
 
 #manifiesto {
@@ -143,21 +187,24 @@ a:visited {
   text-align: left;
   /* font-family: overpass,helvetica,arial,sans-serif; */
   font-weight: 450;
-  line-height: 50px;
+  line-height: 60px;
+  font-family: fantasy;
+
 }
 
 #poem {
-  margin: 26%;
+  margin: 16%;
   font-size: 40px;
   text-align: left;
   /* font-family: overpass,helvetica,arial,sans-serif; */
   font-weight: 450;
-  line-height: 50px;
+  line-height: 100px;
 }
 
 #waitlist {
   /* margin: 16%; */
-  padding: 15%;
+  padding: 10%;
+  padding-top: 17%;
   font-size: 40px;
   text-align: left;
   /* font-family: overpass,helvetica,arial,sans-serif; */
@@ -201,6 +248,10 @@ a:visited {
   color: #f1f5f8;
 }
 
+.adsReference {
+  font-style: italic;
+}
+
 .radioInputs {
   width: 50px;
   height: 50px;
@@ -209,11 +260,12 @@ a:visited {
 #joinButton2 {
   width: 300px;
   height: 100px;
-  font-size: 30px;
+  font-size: 34px;
   margin-left: 60%;
   margin-top: 5%;
-  background-color: black;
+  background-color: #12283a;
   color: white;
+  font-weight: bolder;
 }
 
 .btn {
@@ -226,4 +278,112 @@ a:visited {
   position: relative;
   background-color: #12283a;
   color: #f1f5f8;
+}
+
+#webMessage {
+  color: #1ceaec;
+  font-size: 80px;
+}
+
+#webgif {
+  width: 30%;
+  height: 30%;
+}
+
+#penilessMessage {
+  color: purple;
+}
+
+
+#chainGif {
+  width: 100%;
+  height: 30%;
+}
+
+
+
+/* lets see */
+
+
+/*Neon*/
+
+.glowingA{
+    /* text-decoration: none; */
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   transition: all 0.5s;
+  /* text-align: center; */
+  /* font-size: 3em; */
+  margin: -25px 0 120px 0;
+  letter-spacing: 3px;
+
+  /* font-family: Monoton; */
+}
+
+.glowingA {
+  /* font-family: Monoton; */
+  -webkit-animation: neon1 5.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 5.5s ease-in-out infinite alternate;
+  animation: neon1 5.5s ease-in-out infinite alternate;
+}
+
+
+/*glow for webkit*/
+
+/* @-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+} */
+
+/* @-moz-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+} */
+/*glow*/
+
+@keyframes neon1 {
+  from {
+    /* text-shadow: 0 0 10px #fff, 0 0 20px #1ceaec, 0 0 30px #1ceaec, 0 0 40px #1ceaec, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177; */
+  }
+  to {
+    text-shadow: 0 0 7px #fff, 0 0 7px #fff, 0 0 7px black, 0 0 7px black, 0 0 7px black, 0 0 7px black, 0 0 7px black, 0 0 7px black;
+  }
+}
+
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(-45deg);
+
+/* Firefox */
+-moz-transform: rotate(-45deg);
+
+/* IE */
+-ms-transform: rotate(-45deg);
+
+/* Opera */
+-o-transform: rotate(-45deg);
+
+float: left;
+
+}
+
+
+.title {
+	letter-spacing: 2px;
+	color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, yellow, lime);
+  background-image: -webkit-linear-gradient(92deg, yellow, fuchsia, pink);
+
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
 }

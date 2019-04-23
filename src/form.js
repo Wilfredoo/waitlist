@@ -66,7 +66,7 @@ export class Form extends React.Component {
 
           <input
             className="formInputs"
-            type="number"
+            type="text"
             name="phone"
             placeholder=" WhatsApp number"
             required="required"
@@ -124,7 +124,7 @@ export class Form extends React.Component {
             }}
           />
 
-          <button id="joinButton2" type="submit">Join the waitlist</button>
+          <button id="joinButton2" type="submit">Count me in</button>
         </form>
       </div>
     );

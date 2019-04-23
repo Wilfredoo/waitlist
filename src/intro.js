@@ -106,23 +106,28 @@ export class Intro extends React.Component {
           <img id="logo" src="/hum3.png" />
           </div>
         </div>
-        <h2 className="subtitle">a unique<br />dating app</h2>
+
+        <h2 className="subtitle">a new dating app <br /> for Berlin</h2>
+
+
         <div className="links">
           <p>
-            <a onClick={e => this.handleClickManifiesto()} href="#">
-              Why!?
+            <a className="glowingA" onClick={e => this.handleClickManifiesto()} href="#">
+              Why?
             </a>
             <br />
-            <a onClick={e => this.handleClickWaitlist()} href="#">
+            <a className="glowingA" onClick={e => this.handleClickWaitlist()} href="#">
               Who's in?
             </a>
             <br />
-            <a onClick={e => this.handleClickPoem()} href="#">
+            <a className="glowingA" onClick={e => this.handleClickPoem()} href="#">
               Poem
             </a>
             <br />
 
-            <div id="joinButtonOuter">
+
+
+            <div id="outerouter">
             <a id="joinButton" onClick={e => this.handleClick()} href="#">
               JOIN THE WAITLIST
             </a>{" "}
@@ -147,7 +152,7 @@ export class Intro extends React.Component {
         )}
         {this.state.success && <Thankyou close={e => this.hideModal2()} />}
 
-        <p id="credits"> Made by Jon and Wil</p>
+
       </div>
     );
   }
