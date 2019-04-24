@@ -100,7 +100,7 @@ export class Intro extends React.Component {
       <div className="introContent">
         <div className="logoandtitle">
           <div>
-              <h1 className="title">Colibri</h1>
+              <h1 className="title"><span className="hidden">...</span>Colibri</h1>
           </div>
           <div className="logoDiv">
           <img id="logo" src="/hum3.png" />

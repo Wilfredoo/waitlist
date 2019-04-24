@@ -18,13 +18,18 @@ body {
   font-weight: 650;
 }
 
+.hidden {
+  opacity: 0
+}
+
 .title {
   font-size: 13.6em;
     letter-spacing: 5px;
   font-family: 'Oleo Script';
   padding-left: -10%;
   padding-right: 20%;
-  margin-left: 17%;
+  left: auto;
+
   margin-top: 37%;
   /* padding-right: 10%; */
 }
@@ -144,11 +149,11 @@ font-size: 70px;
 }
 
 .modal {
-  transform: translate(-50%, -95%);
-  position: relative;
+  transform: translate(-50%, -50%);
+  position: fixed;
   background: #f3f3f3;
   width: 92%;
-  height: 1600px;
+  height: 95%;
   top: 50%;
   left: 50%;
   color: black
@@ -370,7 +375,6 @@ float: left;
 .title {
 	letter-spacing: 2px;
 	color: #f35626;
-	background-image: -webkit-linear-gradient(92deg, yellow, lime);
   background-image: -webkit-linear-gradient(92deg, yellow, fuchsia, pink);
 
 	-webkit-background-clip: text;
