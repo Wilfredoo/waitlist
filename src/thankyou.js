@@ -17,11 +17,11 @@ export class Thankyou extends React.Component {
       </button>
  <br />
  <br />
-      <p>WE ARE PENILESS and can't pay for ads</p>
+      <p>We are pretty much peniless and can't pay for ads (for real)</p>
        <p>but if you tell a few folks about this, maybe we can start a chain reaction...</p>
-       <p> Aren't chain reactions cool?</p>
        <br />
       <img id="chainGif" src="https://media.giphy.com/media/3o6gE57nEDKeoCxsrK/giphy.gif" />
+      <p> Aren't chain reactions cool?</p>
       <button id="joinButton2" onClick={this.props.close}  type="submit">Yes, they are</button>
 
       </div>

@@ -72,12 +72,13 @@ body {
   /* margin-left: 7%; */
   /* text-align: center; */
   color: #dae1e7;
-  color: black;
 
 }
 
 a:link {
   text-decoration: none;
+  color: #dae1e7;
+
 }
 
 a:visited {
@@ -89,7 +90,7 @@ a:visited {
   #joinButton {
   color: #01FF70;
   color: #dae1e7;
-  color: yellow;
+  color: #ffc30b;
   border-style: solid;
 border-width: 15px;
 padding: 25px;
@@ -102,14 +103,14 @@ font-size: 70px;
 
 #outerouter {
   background: linear-gradient(90deg,
-yellow
+#ffc30b
  50%, transparent 50%), linear-gradient(90deg,
-yellow
+#ffc30b
  50%, transparent 50%), linear-gradient(0deg,
-yellow
+#ffc30b
  50%,
   transparent 50%), linear-gradient(0deg,
-yellow
+#ffc30b
  50%, transparent 50%);
   background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
   background-size: 30px 20px, 30px 20px, 20px 30px, 20px 30px;
@@ -146,8 +147,8 @@ yellow
   transform: translate(-50%, -50%);
   position: fixed;
   background: #f3f3f3;
-  width: 90%;
-  height: 92%;
+  width: 92%;
+  height: 95%;
   top: 50%;
   left: 50%;
   color: black
@@ -182,13 +183,13 @@ yellow
 
 #manifiesto {
   margin: 6%;
-  margin-top: 0px;
-  font-size: 40px;
+  margin-top: 10%;
+  font-size: 420%;
   text-align: left;
-  /* font-family: overpass,helvetica,arial,sans-serif; */
   font-weight: 450;
-  line-height: 60px;
-  font-family: fantasy;
+  line-height: 120%;
+  vertical-align: middle;
+  margin-bottom: 20%
 
 }
 
@@ -300,31 +301,20 @@ yellow
   height: 30%;
 }
 
-
-
-/* lets see */
-
-
 /*Neon*/
 
 .glowingA{
-    /* text-decoration: none; */
    -webkit-transition: all 0.5s;
    -moz-transition: all 0.5s;
    transition: all 0.5s;
-  /* text-align: center; */
-  /* font-size: 3em; */
   margin: -25px 0 120px 0;
   letter-spacing: 3px;
-
-  /* font-family: Monoton; */
 }
 
 .glowingA {
-  /* font-family: Monoton; */
-  -webkit-animation: neon1 5.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 5.5s ease-in-out infinite alternate;
-  animation: neon1 5.5s ease-in-out infinite alternate;
+  -webkit-animation: neon1 4.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 4.5s ease-in-out infinite alternate;
+  animation: neon1 4.5s ease-in-out infinite alternate;
 }
 
 
@@ -354,7 +344,7 @@ yellow
     /* text-shadow: 0 0 10px #fff, 0 0 20px #1ceaec, 0 0 30px #1ceaec, 0 0 40px #1ceaec, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177; */
   }
   to {
-    text-shadow: 0 0 7px #fff, 0 0 7px #fff, 0 0 7px black, 0 0 7px black, 0 0 7px black, 0 0 7px black, 0 0 7px black, 0 0 7px black;
+    text-shadow: 0 0 17px grey, 0 0 17px grey, 0 0 12px black, 0 0 12px black, 0 0 12px black, 0 0 12px black, 0 0 12px black, 0 0 8px black;
   }
 }
 
@@ -386,4 +376,14 @@ float: left;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 
+}
+
+
+::placeholder {
+  color: #969696  ;
+}
+
+/* radio buttons */
+.radioLabels {
+  line-height: 80px;
 }

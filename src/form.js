@@ -55,8 +55,8 @@ export class Form extends React.Component {
           <input
             className="formInputs"
             type="text"
-            name="city"
-            placeholder=" City"
+            name="age"
+            placeholder=" Age"
             required="required"
             onChange={e => {
               this.handleChange(e);
@@ -68,14 +68,14 @@ export class Form extends React.Component {
             className="formInputs"
             type="text"
             name="phone"
-            placeholder=" WhatsApp number"
+            placeholder=" WhatsApp or Telegram number"
             required="required"
             onChange={e => {
               this.handleChange(e);
             }}
           />
 
-          <p>Looking for:</p>
+          <p>Preference:</p>
           <input
             className="radioInputs"
             type="radio"
@@ -86,7 +86,7 @@ export class Form extends React.Component {
               this.handleChange(e);
             }}
           />
-          <label htmlFor="men">Men</label>
+          <label className="radioLabels" htmlFor="men">Men</label>
           <br />
           <input
             className="radioInputs"
@@ -98,7 +98,7 @@ export class Form extends React.Component {
               this.handleChange(e);
             }}
           />
-          <label htmlFor="women">Women</label>
+          <label className="radioLabels" htmlFor="women">Women</label>
           <br />
           <input
             className="radioInputs"
@@ -110,7 +110,7 @@ export class Form extends React.Component {
               this.handleChange(e);
             }}
           />
-          <label htmlFor="MenWomen">Men and Women</label>
+          <label className="radioLabels" htmlFor="MenWomen">Everything</label>
           <br />
           <br />
           <input
