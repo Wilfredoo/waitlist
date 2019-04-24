@@ -150,7 +150,7 @@ font-size: 70px;
 
 .modal {
   transform: translate(-50%, -50%);
-  position: fixed;
+  position: relative;
   background: #f3f3f3;
   width: 92%;
   height: 95%;
@@ -390,4 +390,8 @@ float: left;
 /* radio buttons */
 .radioLabels {
   line-height: 80px;
+}
+
+body {
+  margin-top: -30px;
 }
