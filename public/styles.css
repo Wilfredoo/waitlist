@@ -149,12 +149,11 @@ font-size: 70px;
 }
 
 .modal {
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -87%);
   position: relative;
   background: #f3f3f3;
   width: 92%;
-  height: 95%;
-  top: 50%;
+  height: 1750px;
   left: 50%;
   color: black
 
@@ -162,7 +161,7 @@ font-size: 70px;
 }
 
 #modalWaitlist {
-  transform: translate(-50%, -10.5%);
+  transform: translate(-50%, -14.5%);
   position: relative;
   background: #f3f3f3;
   width: 92%;
@@ -189,11 +188,10 @@ font-size: 70px;
 #manifiesto {
   margin: 6%;
   margin-top: 10%;
-  font-size: 420%;
+  font-size: 440%;
   text-align: left;
   font-weight: 450;
-  line-height: 120%;
-  vertical-align: middle;
+  line-height: 130%;
   margin-bottom: 20%
 
 }
@@ -231,6 +229,10 @@ font-size: 70px;
   /* font-family: overpass,helvetica,arial,sans-serif; */
   font-weight: 450;
   line-height: 50px;
+}
+
+.jobMoment {
+  margin-left: 80px;
 }
 
 .thankyou {
