@@ -12,9 +12,6 @@ export class Thankyou extends React.Component {
   render() {
     return (
       <div className="modalThankyou">
-      <button onClick={this.props.close} className="btn">
-        <i class="fa fa-close"></i>
-      </button>
  <br />
  <br />
  <div id="thankyou">
