@@ -44,7 +44,7 @@ export class Manifiesto extends React.Component {
               <br />
               <br />
               Do you need an app for that?
-              Nope. We'll just give you a push. <br />
+              Nope.<br /><br /> We'll just give you a push. <br />
               <br />
               Colibri won't be shallow, but it'll be fun <br /><br />
               It will be simple, but not dumb <br /><br />

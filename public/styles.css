@@ -30,12 +30,12 @@ body {
   padding-right: 20%;
   left: auto;
 
-  margin-top: 37%;
+  margin-top: 25%;
   /* padding-right: 10%; */
 }
 
 #logo {
-  margin-top: 80%;
+  margin-top: 55px;
   margin-left: -15%;
   width: 150px;
   height: 150px;
@@ -160,6 +160,18 @@ font-size: 70px;
 ;
 }
 
+.modalThankyou {
+  transform: translate(-50%, -46%);
+  position: fixed;
+  background: #f3f3f3;
+  width: 96%;
+  height: 1850px;
+  top: 50%;
+  left: 50%;
+  color: black
+;
+}
+
 
 
 #modalWaitlist {
@@ -237,15 +249,14 @@ font-size: 70px;
 }
 
 #thankyou {
-  font-size: 440%;
   text-align: left;
   font-weight: 450;
-  font-size: 45px;
-  line-height: 75px;
+  font-size: 44px;
+  line-height: 55px;
   /* margin: 6%; */
   font-weight: 450;
   font-family: overpass, helvetica, arial, sans-serif;
-  padding: 10%;
+  padding: 5%;
 }
 
 .formInputs {

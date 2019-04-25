@@ -63,6 +63,10 @@ export class Poem extends React.Component {
               {this.state.poem[0].line10}
               <br />
               {this.state.poem[0].line11}
+              <br />
+              {this.state.poem[0].line12}
+              <br />
+                            {this.state.poem[0].line13}
             </p>
           </div>
         </form>
