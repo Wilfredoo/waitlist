@@ -66,7 +66,7 @@ INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('
 
 
 
-INSERT INTO poems (line1, line2, line3, line4, line5, line6) VALUES ('sometimes', 'the short poems', 'are the hardest to write', 'Change one word', 'and the whole poem', 'avocados.');
+INSERT INTO poems (line1, line2, line3, line4, line5, line6) VALUES ('sometimes', 'the short poems', 'are the hardest to write', 'change one word', 'and the whole poem', 'avocados.');
 INSERT INTO poems (line1, line2, line3, line4, line5, line6, line7, line8) VALUES ('not yet', 'not yet', 'not yet', 'not yet', 'not yet', 'EAT ME NOW', 'too late...', '- Avocado');
 INSERT INTO poems (line1, line2, line3, line4, line5) VALUES ('If you are a cliff', 'I am the water beneath', 'and this moment', 'is right before', 'we jump');
 INSERT INTO poems (line1, line2, line3, line4) VALUES ('roses are red', 'but violets are not blue', 'that is the truth', 'bottom line: I''d like to fuck you');
@@ -87,7 +87,7 @@ INSERT INTO poems (line1, line2, line3, line4, line5) VALUES ('he was snowy', 't
 INSERT INTO poems (line1, line2, line3, line4, line5, line6) VALUES ('now', 'lost in bliss', 'he called', 'all night', 'full of lust', 'and mad desire');
 INSERT INTO poems (line1, line2, line3, line4) VALUES ('take me', 'take this', 'my wasted life', 'and all its bliss');
 INSERT INTO poems (line1, line2, line3, line4, line5) VALUES ('pizza!', 'cheesy, yummy', 'melting, warm, eating hungry', 'happy, filling, great delicious!', 'awesome');
-INSERT INTO poems (line1, line2, line3, line4, line5) VALUES ('despacito', 'quiero desnudarte a besos despacito', 'firmo en las paredes de tu laberinto', 'y hacer de tu cuerpo todo un manuscrito', 'sube, sube, sube');
+INSERT INTO poems (line1, line2, line3, line4, line5, line6) VALUES ('despacito', 'quiero desnudarte a besos despacito', 'firmo en las paredes de tu laberinto', 'y hacer de tu cuerpo todo un manuscrito', 'sube, sube, sube', '- Luis Fonsi');
 INSERT INTO poems (line1, line2, line3, line4, line5) VALUES ('yo no tengo prisa', 'yo me quiero dar el viaje', 'empecemos lento', 'y despues salvaje', '- Daddy Yankee');
 INSERT INTO poems (line1, line2, line3, line4) VALUES ('what matters most', 'is how well you walk', 'through the fire', '- Bukowski');
 INSERT INTO poems (line1, line2) VALUES ('y si te beso', 'salgo ileso?');
@@ -106,4 +106,4 @@ INSERT INTO poems (line1, line2, line3, line4, line5, line6) VALUES ('its like e
 -- INSERT INTO poems (line1, line2, line3, line4, line5, line6) VALUES ('', '', '', '', '', '');
 INSERT INTO poems (line1, line2, line3, line4, line5, line6, line7, line8, line9) VALUES ('until the sun rises in the west', 'and sets in the east', 'until the rivers run dry', 'and the mountains blow', 'in the wind', 'like leaves', 'then you shall return to me', 'my sun and stars', '- Daenerys Targaryen');
 INSERT INTO poems (line1, line2, line3, line4, line5) VALUES ('stars', 'hide your fires', 'let not light see', 'my black and deep desires', '- Shakespeare');
-INSERT INTO poems (line1, line2, line3, line4, line5, line6, line7, line8) VALUES ('Do not go gentle', 'into that good night', 'Old age should burn', 'and rave at close of day', ' ', 'rage', 'rage', 'against the dying of the light');
+INSERT INTO poems (line1, line2, line3, line4, line5, line6, line7, line8, line9) VALUES ('do not go gentle', 'into that good night', 'old age should burn', 'and rave at close of day', ' ', 'rage', 'rage', 'against the dying of the light', '-Dylan Thomas');
