@@ -107,13 +107,13 @@ export class Intro extends React.Component {
           </div>
         </div>
 
-        <h2 className="subtitle">a new dating app <br /> for Berlin</h2>
+        <h2 className="subtitle">an alternative to <br />dating apps <br /> </h2>
 
 
         <div className="links">
           <p>
             <a className="glowingA" onClick={e => this.handleClickManifiesto()} href="#">
-              Why?
+              About
             </a>
             <br />
             <a className="glowingA" onClick={e => this.handleClickWaitlist()} href="#">

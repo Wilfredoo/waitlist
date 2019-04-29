@@ -26,7 +26,7 @@ export class Form extends React.Component {
         <button onClick={this.props.close} className="btn">
           <i className="fa fa-close" />
         </button>
-
+        <p id="formText">Fill in your info and we'll send you a little message to your WhatsApp or Telegram once our beta is ready. <br /><br /> If you don't feel to comfy putting in your phone number, just put your email instead ;)</p>
         <form
           id="form"
           method="post"
@@ -68,14 +68,14 @@ export class Form extends React.Component {
             className="formInputs"
             type="text"
             name="phone"
-            placeholder=" WhatsApp or Telegram number"
+            placeholder=" Phone Number (with country code)"
             required="required"
             onChange={e => {
               this.handleChange(e);
             }}
           />
 
-          <p>Preference:</p>
+          <p>Looking for:</p>
           <input
             className="radioInputs"
             type="radio"
@@ -113,16 +113,8 @@ export class Form extends React.Component {
           <label className="radioLabels" htmlFor="MenWomen">Everything</label>
           <br />
           <br />
-          <input
-            className="formInputs"
-            type="text"
-            name="message"
-            placeholder=" Say something to us, we'll read it."
-            maxlength="30"
-            onChange={e => {
-              this.handleChange(e);
-            }}
-          />
+
+
 
           <button id="joinButton2" type="submit">Count me in</button>
         </form>
