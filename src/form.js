@@ -46,7 +46,7 @@ export class Form extends React.Component {
             className="formInputs"
             type="text"
             name="lastname"
-            placeholder=" Age"
+            placeholder=" Last Name"
             required="required"
             onChange={e => {
               this.handleChange(e);
@@ -56,7 +56,7 @@ export class Form extends React.Component {
             className="formInputs"
             type="text"
             name="age"
-            placeholder=" Is your phone Android or iOS"
+            placeholder=" Age"
             required="required"
             onChange={e => {
               this.handleChange(e);
