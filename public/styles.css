@@ -218,12 +218,13 @@ yellow
 }
 
 #poem {
-  margin: 16%;
+  margin: 8%;
+  margin-top: 14%;
   font-size: 40px;
   text-align: left;
   /* font-family: overpass,helvetica,arial,sans-serif; */
   font-weight: 450;
-  line-height: 100px;
+  line-height: 120px;
 }
 
 
