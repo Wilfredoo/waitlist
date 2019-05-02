@@ -49,7 +49,7 @@ body {
 
 .subtitle {
   font-size: 53px;
-  line-height: 180%;
+  line-height: 200%;
   margin-right: 10%;
   margin-top: -60px;
   /* color: #6495ed; */
@@ -151,7 +151,9 @@ yellow
 
 } */
 
-
+#outerouter {
+  margin-top: 28px;
+}
 
 #credits {
   position: fixed;
