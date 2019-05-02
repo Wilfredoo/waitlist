@@ -26,7 +26,7 @@ export class Form extends React.Component {
         <button onClick={this.props.close} className="btn">
           <i className="fa fa-close" />
         </button>
-        <p id="formText">Fill in your info and we'll send you a little text once our beta is ready. <br /><br /> If you don't feel to comfy putting in your phone number, just put your email instead ;)</p>
+        <p id="formText">Colibri is coming soon — fill in your info and we'll send you a little text once our beta is ready. <br /><br /> </p>
         <form
           id="form"
           method="post"
