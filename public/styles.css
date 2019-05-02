@@ -160,8 +160,20 @@ yellow
   font-size: 35px;
 }
 
+.modalManifiesto {
+  transform: translate(-50%, -69%);
+  position: relative;
+  background: #f3f3f3;
+  width: 96%;
+  height: 2100px;
+  top: 50%;
+  left: 50%;
+  color: black
+;
+}
+
 .modal {
-  transform: translate(-50%, -78%);
+  transform: translate(-50%, -76%);
   position: relative;
   background: #f3f3f3;
   width: 96%;
@@ -196,6 +208,10 @@ yellow
   margin-top: -1000px;
 }
 
+#questions {
+  font-size: 35px;
+}
+
 #btnWaitlist {
   z-index: 2;
   width: 18.5%;
@@ -210,7 +226,7 @@ yellow
 
 #manifiesto {
   margin: 6%;
-  margin-top: 10%;
+  margin-top: 7%;
   font-size: 440%;
   text-align: left;
   font-weight: 450;
