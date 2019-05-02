@@ -48,8 +48,8 @@ body {
 }
 
 .subtitle {
-  font-size: 570%;
-  line-height: 160%;
+  font-size: 53px;
+  line-height: 180%;
   margin-right: 10%;
   margin-top: -60px;
   /* color: #6495ed; */
@@ -68,7 +68,7 @@ body {
 }
 
 #comingSoon {
-  font-size: 0.6em;
+  font-size: 0.55em;
 
 }
 
