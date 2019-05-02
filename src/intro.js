@@ -99,7 +99,7 @@ export class Intro extends React.Component {
     return (
       <div className="introContent">
         <div className="logoandtitle">
-          <div>
+          <div className="titleDiv">
               <h1 className="title"><span className="hidden">...</span>Colibri</h1>
           </div>
           <div className="logoDiv">
@@ -107,8 +107,7 @@ export class Intro extends React.Component {
           </div>
         </div>
 
-        <h2 className="subtitle">an alternative to <br />dating apps <br /> </h2>
-
+        <h2 className="subtitle">an alternative dating app <br /> <span id="comingSoon">***&nbsp;   made in Berlin &nbsp;   ***</span> </h2>
 
         <div className="links">
           <p>

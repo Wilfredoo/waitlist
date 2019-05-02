@@ -41,7 +41,7 @@ export class Manifiesto extends React.Component {
               Not really. Our app won't change your life, it'll just help you meet people in a special way.
               <br />
               <br />
-              <span id="alternative">Colibri will be an alternative dating app.</span> It will be a modest yet colorful dating app. It won't be shallow, but it'll be fun. It won't be serious, but it'll be real.
+              <span id="alternative">Colibri will be an alternative dating app.</span> It will be a modest, yet colorful dating app. It won't be shallow, but it'll be fun. It won't be serious, but it'll be real.
 
             </p>
           </div>

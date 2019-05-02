@@ -28,37 +28,34 @@ body {
   font-family: 'Oleo Script';
   padding-left: -10%;
   padding-right: 20%;
-  left: auto;
+  /* left: auto; */
 
-  margin-top: 25%;
+  /* margin-top: 25%; */
   /* padding-right: 10%; */
 }
 
 #logo {
-  margin-top: 55px;
-  margin-left: -15%;
+  /* margin-top: 55px;
+  margin-left: -15%; */
   width: 150px;
   height: 150px;
+  margin-bottom: 20px;
 
 }
 
 .logoandtitle {
-  display: flex;
-  justify-content: center;
+
 }
 
 .subtitle {
-  font-size: 8em;
-  line-height: 140%;
+  font-size: 7em;
+  line-height: 160%;
   margin-right: 10%;
-  margin-top: -50px;
+  margin-top: -60px;
   /* color: #6495ed; */
   /* color: yellow; */
   color: #1ceaec;
   color: #1ceaec;
-
-  /* color: #7FDBFF */
-;
 
 
   /* text-align: right; */
@@ -66,11 +63,18 @@ body {
   font-family: 'Alegreya Sans SC', sans-serif;
   margin-left: 8%;
   /* text-align: center */
+  /* margin-bottom: -10px; */
+
+}
+
+#comingSoon {
+  font-size: 0.6em;
+
 }
 
 .links {
   /* background-color: rgba(255,255,255,.9); */
-  font-size: 40px;
+  font-size: 36px;
   line-height: 200px;
   text-decoration: none;
   font-family: 'Alegreya Sans SC', sans-serif;
@@ -79,9 +83,7 @@ body {
   color: #fff;
 }
 
-#subtitle2 {
-  font-size: .6em;
-}
+
 
 a:link {
   text-decoration: none;
@@ -431,4 +433,18 @@ float: left;
 /* radio buttons */
 .radioLabels {
   line-height: 80px;
+}
+
+.logoandtitle
+{
+  text-align: center;
+  padding: 15px;
+}
+.titleDiv
+{
+  display: inline-block;
+}
+.logoDiv
+{
+  display: inline-block;
 }
