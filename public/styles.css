@@ -23,7 +23,7 @@ body {
 }
 
 .title {
-  font-size: 13.6em;
+  font-size: 12.6em;
     letter-spacing: 5px;
   font-family: 'Oleo Script';
   padding-left: -10%;
@@ -48,7 +48,7 @@ body {
 }
 
 .subtitle {
-  font-size: 690%;
+  font-size: 610%;
   line-height: 160%;
   margin-right: 10%;
   margin-top: -60px;
