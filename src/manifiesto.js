@@ -31,7 +31,7 @@ export class Manifiesto extends React.Component {
           <h3>What's up?</h3>
             <p>
               If you live in Berlin, you have probably seen those ads in the U-Bahn; <span className="adsReference">find love every 11 minutes, single not sorry</span>,
-              etc etc... <br /><br /> But we don't really believe in perfect matches or in swiping people like they were merely products of a shopping list.
+              etc etc... <br /><br /> But we don't really believe in perfect matches, nor in swiping people like they were merely products of a shopping list.
               <br />
               <br />
               Rather, we believe in imperfect and, sometimes, beautiful stories. In heart, flesh and bones, serendipity and flavor. Or just getting some tea around the corner.
@@ -43,7 +43,7 @@ export class Manifiesto extends React.Component {
               <br />
               <span id="alternative">Colibri will be an alternative dating app.</span> It will be a modest, yet colorful dating app. It won't be shallow, but it'll be fun. It won't be serious, but it'll be real.
               <br /><br />
-            <span id="questions">  *Colibri is brought to you by regular folks. Any questions just send a message to +49 177 7898706 </span>
+            <span id="questions">  *Any questions just whatsapp/telegram +49 177 7898706 </span>
             </p>
           </div>
         </form>
