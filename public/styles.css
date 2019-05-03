@@ -164,7 +164,7 @@ yellow
 }
 
 .modalManifiesto {
-  transform: translate(-50%, -69%);
+  transform: translate(-50%, -68%);
   position: relative;
   background: #f3f3f3;
   width: 96%;
@@ -176,7 +176,7 @@ yellow
 }
 
 .modal {
-  transform: translate(-50%, -76%);
+  transform: translate(-50%, -75%);
   position: relative;
   background: #f3f3f3;
   width: 96%;
