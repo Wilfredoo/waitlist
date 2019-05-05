@@ -333,3 +333,67 @@ h3 {
   color: #7b7d7b
 }
 /*Neon*/
+
+
+
+/* .glowingA{
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   transition: all 0.5s;
+  margin: -25px 0 120px 0;
+  letter-spacing: 3px;
+}
+
+.glowingA {
+  -webkit-animation: neon1 3s ease-in-out infinite alternate;
+  -moz-animation: neon1 3s ease-in-out infinite alternate;
+  animation: neon1 3s ease-in-out infinite alternate;
+} */
+
+
+
+@keyframes neon1 {
+  from {
+    /* text-shadow: 0 0 10px #fff, 0 0 20px #1ceaec, 0 0 30px #1ceaec, 0 0 40px #1ceaec, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177; */
+  }
+  to {
+    text-shadow: 0 0 17px grey, 0 0 17px grey, 0 0 12px black, 0 0 12px black, 0 0 12px black, 0 0 12px black, 0 0 12px black, 0 0 8px black;
+  }
+}
+
+
+
+
+.title {
+	letter-spacing: 2px;
+	color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, yellow, fuchsia, pink);
+
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
+
+
+::placeholder {
+  color: #969696  ;
+}
+
+/* radio buttons */
+.radioLabels {
+  line-height: 80px;
+}
+
+.logoandtitle
+{
+  text-align: center;
+  padding: 15px;
+}
+.titleDiv
+{
+  display: inline-block;
+}
+.logoDiv
+{
+  display: inline-block;
+}
