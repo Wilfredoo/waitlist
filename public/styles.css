@@ -29,10 +29,8 @@ body {
   font-family: 'Oleo Script';
   padding-left: -10%;
   padding-right: 20%;
-  /* left: auto; */
+  padding: 0px;
 
-  /* margin-top: 25%; */
-  /* padding-right: 10%; */
 }
 
 #logo {
@@ -346,6 +344,8 @@ h3 {
 	color: #f35626;
   background-image: -webkit-linear-gradient(92deg, yellow, fuchsia, pink);
 
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 
 }
 
