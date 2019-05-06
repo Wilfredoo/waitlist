@@ -42,16 +42,7 @@ export class Form extends React.Component {
               this.handleChange(e);
             }}
           />
-          <input
-            className="formInputs"
-            type="text"
-            name="lastname"
-            placeholder=" Last Name"
-            required="required"
-            onChange={e => {
-              this.handleChange(e);
-            }}
-          />
+  
           <input
             className="formInputs"
             type="text"

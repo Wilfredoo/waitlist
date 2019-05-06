@@ -1,0 +1,134 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 10.7 (Ubuntu 10.7-0ubuntu0.18.04.1)
+-- Dumped by pg_dump version 10.7 (Ubuntu 10.7-0ubuntu0.18.04.1)
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: waitlist; Type: TABLE; Schema: public; Owner: wilfredo
+--
+
+CREATE TABLE public.waitlist (
+    id integer NOT NULL,
+    firstname character varying(300),
+    lastname character varying(300),
+    age character varying(300),
+    city character varying(300),
+    email character varying(300),
+    phone character varying(300),
+    preference character varying(300),
+    message character varying(300),
+    created_at timestamp without time zone DEFAULT CURRENT_TIMESTAMP
+);
+
+
+ALTER TABLE public.waitlist OWNER TO wilfredo;
+
+--
+-- Name: waitlist_id_seq; Type: SEQUENCE; Schema: public; Owner: wilfredo
+--
+
+CREATE SEQUENCE public.waitlist_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.waitlist_id_seq OWNER TO wilfredo;
+
+--
+-- Name: waitlist_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: wilfredo
+--
+
+ALTER SEQUENCE public.waitlist_id_seq OWNED BY public.waitlist.id;
+
+
+--
+-- Name: waitlist id; Type: DEFAULT; Schema: public; Owner: wilfredo
+--
+
+ALTER TABLE ONLY public.waitlist ALTER COLUMN id SET DEFAULT nextval('public.waitlist_id_seq'::regclass);
+
+
+--
+-- Data for Name: waitlist; Type: TABLE DATA; Schema: public; Owner: wilfredo
+--
+
+COPY public.waitlist (id, firstname, lastname, age, city, email, phone, preference, message, created_at) FROM stdin;
+1	Markus	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:05.674376
+2	Andrew	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:05.68536
+3	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:05.696886
+4	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:05.707394
+5	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:05.729804
+6	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:05.751365
+7	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:05.795401
+8	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:05.81727
+9	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:05.839307
+10	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:05.885366
+11	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:06.019292
+12	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:06.078777
+13	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:06.124792
+14	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:06.138804
+15	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:06.160483
+16	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:06.182672
+17	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:06.204625
+18	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:06.226343
+19	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:06.247993
+20	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:06.270732
+21	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:06.292296
+22	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:06.313397
+23	Juan	Valdivia	\N	\N	\N	+1304031422332	men	cool thing you guys	2019-05-06 17:19:06.336704
+\.
+
+
+--
+-- Name: waitlist_id_seq; Type: SEQUENCE SET; Schema: public; Owner: wilfredo
+--
+
+SELECT pg_catalog.setval('public.waitlist_id_seq', 23, true);
+
+
+--
+-- Name: waitlist waitlist_pkey; Type: CONSTRAINT; Schema: public; Owner: wilfredo
+--
+
+ALTER TABLE ONLY public.waitlist
+    ADD CONSTRAINT waitlist_pkey PRIMARY KEY (id);
+
+
+--
+-- PostgreSQL database dump complete
+--
+

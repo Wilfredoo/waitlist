@@ -1,20 +1,46 @@
--- DROP TABLE IF EXISTS waitlist;
+DROP TABLE IF EXISTS waitlist;
 
--- CREATE TABLE waitlist(
---     id SERIAL PRIMARY KEY,
---     firstname VARCHAR(300),
---     lastname VARCHAR(300),
---     age VARCHAR(300),
---     city VARCHAR(300),
---     email VARCHAR(300),
---     phone VARCHAR(300),
---     preference VARCHAR(300),
---     message VARCHAR(300),
---     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
--- );
+CREATE TABLE waitlist(
+    id SERIAL PRIMARY KEY,
+    firstname VARCHAR(300),
+    lastname VARCHAR(300),
+    age VARCHAR(300),
+    city VARCHAR(300),
+    email VARCHAR(300),
+    phone VARCHAR(300),
+    preference VARCHAR(300),
+    message VARCHAR(300),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 
--- INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
--- INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Markus', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Andrew', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+INSERT INTO waitlist (firstname, lastname, phone, preference, message) VALUES ('Juan', 'Valdivia', '+1304031422332', 'men', 'cool thing you guys');
+
+
+
+
+
 
 DROP TABLE IF EXISTS poems;
 CREATE TABLE poems(
