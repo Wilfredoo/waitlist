@@ -21,9 +21,9 @@ export class Intro extends React.Component {
   }
 
   componentDidMount() {
-    axios.get("/showWaitlist").then(result => {
-      this.setState({ waitlistData: result.data.data });
-    });
+    // axios.get("/showWaitlist").then(result => {
+    //   this.setState({ waitlistData: result.data.data });
+    // });
   }
 
   handleClick() {
